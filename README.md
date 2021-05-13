@@ -28,6 +28,18 @@ The main parts of the project are:
 * **dispatcher**: contains dispatcher configurations for AEM as a Cloud Service
 * **repository-structure**:  Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
 * **all**: An empty module that embeds the above sub-modules and any vendor dependencies into a single deployable package.
+# WKND Events SPA Editor Project
+
+This is the code companion for a tutorial that walks through the process of setting up an AEM project to leverage the Single Page App or SPA Editor feature.
+
+## Modules
+
+The main parts of the template are:
+
+* react-app: a webpack project for the React application. The App is built and deployed to AEM in the form of a client library via the ui.apps module. see the README beneath the react-app for more details.
+* core: Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
+* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
+* ui.content: contains sample content using the components from the ui.apps
 
 ## How to build
 
